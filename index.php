@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
   <body>
-    <h1>Turnos Integra</h1>
+  <button type="button" class="btn btn-danger">Danger</button>
     
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
