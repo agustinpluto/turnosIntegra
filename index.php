@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
   <body>
-    <!-- Contenido de su sitio web -->
+    <h1>Turnos Integra</h1>
     
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
