@@ -50,7 +50,7 @@
           <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
             <div class="card mx-2 mb-4">
               <div class="card-header text-danger">
-                Ingreso
+                Crear cuenta
               </div>
               <div class="card-body">
                 <h5 class="card-title">Registrarse</h5>
