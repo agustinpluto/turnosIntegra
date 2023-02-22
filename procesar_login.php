@@ -14,7 +14,7 @@
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
         $user = mysqli_fetch_assoc($result);
-
+        echo $user;
         if ($user && password_verify($password, $user["password"])) {
             $_SESSION["user_id"] = $user["id"];
             header("Location: loginOk.php");
