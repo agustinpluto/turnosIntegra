@@ -10,24 +10,24 @@
   <!-- danger es violeta -->
   <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
-      <a class="navbar-brand text-black" href="/">Integra</a>
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand navbar-light bg-light">
+      <a class="navbar-brand" href="/index.php">Integra</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button> -->
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-
-        <ul class="navbar-nav mx-4">
-          <li class="nav-item">
+        <ul class="navbar-nav text-danger">
+          <li class="nav-item active">
             <a class="nav-link text-danger" href="/index.php">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-danger" href="/registro.php">Crear cuenta</a>
           </li>
         </ul>
-
       </div>
+    </nav>  
+
   </div>
 
   </div>
