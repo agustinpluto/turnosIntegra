@@ -40,14 +40,14 @@
       <div class="row">
         <div class="col">
           <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
-            <form class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
+            <form action="servidor/registro/registrar.php" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Registro</h1>
               <div class="row">
                 <div class="col">
 
                   <div class="mb-3">
-                    <label for="mpmbre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="mpmbre" name="mpmbre" required>
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
                   </div>
 
                   <div class="mb-3">
