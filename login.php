@@ -33,16 +33,16 @@
     <div class="container">
       <div class="row">
         <div class="col">
-            <div class="d-flex flex-row justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
+            <div class="d-flex flex-row aling-items-center pt-4 border rounded mx-5 mt-5">
                 
                 <div class="row">
-                    1
+                    <h1>asd</h1>
                 </div>
                 <div class="row">
-                    1
+                    <h1>asd</h1>
                 </div>
                 <div class="row">
-                    1
+                    <h1>asd</h1>
                 </div>
 
                 <a href="/registro.php" class="btn btn-danger btn-block">Entrar</a>
