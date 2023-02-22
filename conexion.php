@@ -5,11 +5,12 @@
     $password = 'Ireliagod1!';
     $database = 'integra';
 
-    try {
-      $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-    } catch (PDOException $e) {
-      die('Connection Failed: ' . $e->getMessage());
-    }
+    $conexion = mysqli_connect($server,$username,$password,$database);
 
+    if ($conexion) {
+        echo "Estas conectado a la DB";
+    } else {
+        echo "Error conexion";
+    }
 
 ?>
