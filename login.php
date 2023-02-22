@@ -34,7 +34,20 @@
       <div class="row">
         <div class="col">
             <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
-                <div class="card mx-2 mb-4">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="usuario@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Email address</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+            </div>
+            <a href="/registro.php" class="btn btn-danger btn-block">Entrar</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
+              <div class="card mx-2 mb-4">
                 <div class="card-header text-danger">
                     Ingreso
                 </div>
@@ -42,9 +55,9 @@
                     <h5 class="card-title">Registrarse</h5>
                     <p class="card-text">Para crear su cuenta presione el boton "Registro"</p>
                     <a href="/registro.php" class="btn btn-danger btn-block">Registro</a>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
