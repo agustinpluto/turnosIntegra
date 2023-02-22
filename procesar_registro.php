@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include('server.php');
+    include('conexion.php');
     
     $errors = array();
 
@@ -11,20 +11,20 @@
         $password_2 = mysqli_real_escape_string($conn, $_POST['password_2']);
 
         if (empty($username)) {
-            array_push($errors, "Username is required");
-            $_SESSION['error'] = "Username is required";
+            array_push($errors, "Se requiere un nombre");
+            $_SESSION['error'] = "Se requiere un nombre";
         }
         if (empty($email)) {
-            array_push($errors, "Email is required");
-            $_SESSION['error'] = "Email is required";
+            array_push($errors, "Se requiere un E-Mail");
+            $_SESSION['error'] = "Se requiere un E-Mail";
         }
         if (empty($password_1)) {
-            array_push($errors, "Password is required");
-            $_SESSION['error'] = "Password is required";
+            array_push($errors, "Se requiere una contraseña");
+            $_SESSION['error'] = "Se requiere una contraseña";
         }
         if ($password_1 != $password_2) {
-            array_push($errors, "The two passwords do not match");
-            $_SESSION['error'] = "The two passwords do not match";
+            array_push($errors, "Las contraseñas no coinciden");
+            $_SESSION['error'] = "Las contraseñas no coinciden";
         }
 
         $user_check_query = "SELECT * FROM user WHERE username = '$username' OR email = '$email' LIMIT 1";
@@ -32,11 +32,8 @@
         $result = mysqli_fetch_assoc($query);
 
         if ($result) { // if user exists
-            if ($result['username'] === $username) {
-                array_push($errors, "Username already exists");
-            }
             if ($result['email'] === $email) {
-                array_push($errors, "Email already exists");
+                array_push($errors, "Ya existe el E-Mail");
             }
         }
 
@@ -48,7 +45,7 @@
 
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
-            header('location: index.php');
+            header('location: login.php');
         } else {
             header("location: register.php");
         }
