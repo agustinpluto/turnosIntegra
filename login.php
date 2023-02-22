@@ -47,21 +47,9 @@
               <button type="submit" class="btn btn-danger w-100">Ingresar</button>
             </form>
           </div>
-
         </div>
         <div class="col">
-          <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
-            <div class="card mx-2 mb-4">
-              <div class="card-header text-danger">
-                Registro
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Registrarse</h5>
-                <p class="card-text">Para crear su cuenta presione el boton "Registro"</p>
-                <a href="/registro.php" class="btn btn-danger btn-block">Registro</a>
-              </div>
-            </div>
-          </div>
+          <h1>COmpletar con algo</h1>
         </div>
       </div>
     </div>
