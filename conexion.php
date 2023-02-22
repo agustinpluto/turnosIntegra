@@ -1,23 +1,14 @@
 <?php
 
-// Incluimos el archivo de conexión a la base de datos
-// datos de conexión
-$servidor = "localhost";
-$usuario = "agustin";
-$password = "Ireliagod1!";
-$basedatos = "integra";
+$server = 'localhost:3307';
+$username = 'agustin';
+$password = 'Ireliagod1!';
+$database = 'integra';
 
-$con = mysqli_connect($servidor, $usuario, $password, $basedatos); 
-// Si la conexión falla, aparece el error 
-// if($con === false) { 
-//   echo 'Ha habido un error <br>'.mysqli_connect_error(); 
-// } else {
-//   echo 'Conectado a la base de datos';
-// }
-// Check connection
-if (!$conn) {
-    die("Connection failed" . mysqli_connect_error());
-} 
-
+try {
+  $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+} catch (PDOException $e) {
+  die('Connection Failed: ' . $e->getMessage());
+}
 
 ?>
