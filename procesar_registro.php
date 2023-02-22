@@ -1,5 +1,7 @@
 <?php
-    
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
     include 'conexion.php';
     if (!empty($email) && !empty($password)) {
         $query = "SELECT id, email, password FROM usuarios WHERE email = '$email'";

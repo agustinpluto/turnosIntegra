@@ -1,9 +1,6 @@
 <?php
 
-  $email = $_POST['email'];
-  $password = $_POST['password'];
-
-  require 'procesar_registro.php'
+  
 
 ?>
 
