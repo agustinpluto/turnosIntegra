@@ -4,6 +4,7 @@
 <head>
   <title>Turnos Integra</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-sm-6">
           <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
             <div class="card mx-2 mb-4 flex-fill p-1 ml-2 mr-2" style="heigh: 100px;">
               <div class="card-header text-black bg-warning">
@@ -46,7 +47,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
           <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
             <div class="card mx-2 mb-4 flex-fill p-1 ml-2 mr-2">
               <div class="card-header text-black bg-warning">
