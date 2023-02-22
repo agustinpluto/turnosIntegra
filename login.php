@@ -7,7 +7,7 @@
 
   if (!empty($email) && !empty($password)) {
 
-    echo "Bienvenido";
+    echo "Bienvenido".$email;
 
   } else {
 
