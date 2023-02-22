@@ -44,7 +44,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Ingresar</h5>
-                <p class="card-text">Para ingresar presione el boton "Entrar"</p>
+                <p class="card-text">Es necesario inciar sesión para poder gestionar sus turnos, haga "click" en el siguiente boton para ingresar.</p>
                 <a href="/login.php" class="btn btn-danger btn-block">Entrar</a>
               </div>
             </div>
@@ -58,7 +58,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Registrarse</h5>
-                <p class="card-text">Para crear su cuenta presione el boton "Registro"</p>
+                <p class="card-text">Cree su cuenta para gestionar sus turnos On-Line, haga "click" en el siguiente boton para ir al registro.</p>
                 <a href="/registro.php" class="btn btn-danger btn-block">Registro</a>
               </div>
             </div>
