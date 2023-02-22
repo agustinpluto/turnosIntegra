@@ -80,21 +80,6 @@
     </div>
   </div>
 
-  <div class="container-fluid fixed-bottom">
-    <footer class="bg-light py-1 mx-auto">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p>© 2023 Turnos Integra. Designed by Agustin Pluto.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-
-
   <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
