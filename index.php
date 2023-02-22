@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col">
           <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
-            <div class="card mx-2 mb-4 flex-fill p-4">
+            <div class="card mx-2 mb-4 flex-fill p-1 ml-2 mr-2">
               <div class="card-header text-black bg-warning">
                 Ingreso
               </div>
@@ -48,7 +48,7 @@
         </div>
         <div class="col">
           <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
-            <div class="card mx-2 mb-4 flex-fill p-4">
+            <div class="card mx-2 mb-4 flex-fill p-1 ml-2 mr-2">
               <div class="card-header text-black bg-warning">
                 Crear cuenta
               </div>
