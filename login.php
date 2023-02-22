@@ -1,3 +1,30 @@
+<?php
+
+  session_start();
+
+  if (isset($_SESSION['user_id'])) {
+    header('Location: /login');
+  }
+  require 'conexion.php';
+
+  if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    $records = $conn->prepare('SELECT id, email, password FROM usuarios WHERE email = :email');
+    $records->bindParam(':email', $_POST['email']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $message = '';
+
+    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+      $_SESSION['user_id'] = $results['id'];
+      header("Location: /login.php");
+    } else {
+      $message = 'Usuario o Contraseña erroneos.';
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -30,17 +57,17 @@
       </div>
       <a class="navbar-brand" href="/index.php" style="padding-left: 10px;">Logo</a>
     </nav>
-
-  </div>
-
   </div>
 
   <div class="container-fluid">
     <div class="container">
       <div class="row">
         <div class="col">
+          <?php if(!empty($message)): ?>
+            <p> <?= $message ?></p>
+          <?php endif; ?>
           <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
-            <form class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
+            <form action="login.php" method="POST" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Iniciar sesión</h1>
               <div class="row">
                 <div class="col">

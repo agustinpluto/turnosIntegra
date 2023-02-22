@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Turnos Integra</title>
+  <title>Integra</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -27,7 +27,6 @@
       </div>
       <a class="navbar-brand" href="/index.php" style="padding-left: 10px;">Logo</a>
     </nav>
-
 
   </div>
 
