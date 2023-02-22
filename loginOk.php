@@ -35,7 +35,7 @@
     <div class="row">
       <div class="col">
         <div class="container-flui d-flex justify-content-center aling-items-center">
-            <a>Mis turnos</a>
+            <h3 class="text-danger">Mis turnos</h3>
         </div>
       </div>
     </div>
