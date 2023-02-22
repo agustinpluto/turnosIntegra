@@ -9,7 +9,7 @@
 
 <body>
   <!-- danger es violeta -->
-  <div class="container-fluid px-0 mb-3">
+  <div class="container-fluid px-0">
 
   <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand navbar-light bg-light" style="border-bottom: 2px solid #510097;">
       <a class="navbar-brand" href="/index.php">Integra</a>
