@@ -69,7 +69,7 @@
     </div>
 
     <div class="container-fluid fixed-bottom">
-      <footer class="bg-light py-1 mx-auto mt-1">
+      <footer class="bg-light pt-1 mx-auto mt-1">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
