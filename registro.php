@@ -36,7 +36,7 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col col-sm-6">
+        <div class="col">
         <div class="d-flex justify-content-center mt-2 mb-5">
             <form class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Registro</h1>
