@@ -20,13 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-danger">
           <li class="nav-item active">
-            <a class="nav-link" href="/index.php">Inicio</a>
+            <a class="nav-link text-danger" href="/index.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/registro.php">Crear cuenta</a>
+            <a class="nav-link text-danger" href="/registro.php">Crear cuenta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login.php">Iniciar sesión</a>
+            <a class="nav-link text-danger" href="/login.php">Iniciar sesión</a>
           </li>
         </ul>
       </div>
