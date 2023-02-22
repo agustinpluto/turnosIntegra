@@ -14,15 +14,8 @@
     $result = $stmt->get_result();
     $user = $result->fetch_assoc();
 
-    if ($user && password_verify($password, $user['password'])) {
-      // Las credenciales son válidas, iniciar sesión
-      session_start();
-      $_SESSION['user_id'] = $user['id'];
-      header('Location: index.php');
-    } else {
-      // Las credenciales son inválidas, mostrar un mensaje de error
-      echo "Correo electrónico o contraseña incorrectos.";
-    }
+    echo "hola";
+
   } else {
     echo "error";
   }
