@@ -5,7 +5,15 @@
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  echo $email;
+  if (!empty($email) && !empty($password)) {
+
+    echo "Bienvenido";
+
+  } else {
+
+    echo "algo salio mal";
+
+  }
 
 ?>
 
