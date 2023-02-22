@@ -54,7 +54,7 @@
                   
                 </div>
               </div>
-              <button type="submit" class="btn btn-danger w-100 ml-3 mr-3">Entrar</button>
+              <button type="submit" class="btn btn-danger w-100">Entrar</button>
             </form>
           </div>
       </div>

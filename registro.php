@@ -66,9 +66,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col mx-4">
-                <button type="submit" class="btn btn-danger w-100">Registro</button>
-              </div>
+              
+              <button type="submit" class="btn btn-danger w-100">Registro</button>
+            
             </form>
           </div>
         </div>
