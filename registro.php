@@ -79,7 +79,7 @@
 
                 </div>
               </div>
-              <button type="submit" class="btn btn-danger w-100 mt-4 mb-4">Entrar</button>
+              <button type="submit" class="btn btn-danger w-100 mt-4 mb-4">Registrarse</button>
             </form>
           </div>
         </div>
