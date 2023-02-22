@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-            REGISTRO
+            LOGIN
         </div>
       </div>
     </div>
