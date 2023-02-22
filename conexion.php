@@ -7,6 +7,7 @@ $database = 'integra';
 
 try {
   $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+  echo "Conectado";
 } catch (PDOException $e) {
   die('Connection Failed: ' . $e->getMessage());
 }
