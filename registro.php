@@ -4,11 +4,12 @@
 <head>
   <title>Turnos Integra</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <!-- danger es violeta -->
-  <div class="container-fluid">
+  <div class="container-fluid px-0">
 
   <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand navbar-light bg-light">
       <a class="navbar-brand" href="/index.php">Integra</a>
