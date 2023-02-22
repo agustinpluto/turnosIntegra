@@ -29,7 +29,7 @@
         </ul>
       </div>
       <div>
-        <h1>LOGO</h1>
+        <h3>LOGO</h3>
       </div>
     </nav>
 
