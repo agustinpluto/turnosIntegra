@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-        <div class="d-flex justify-content-center my-5" style="height: 100vh;">
+        <div class="d-flex justify-content-center mt-5 mb-5">
             <form class="p-5 rounded" style="background-color: #8800ff;">
               <h1 class="mb-4 text-center">Iniciar sesión</h1>
               <div class="row">
