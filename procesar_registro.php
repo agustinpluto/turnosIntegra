@@ -6,16 +6,16 @@ $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $dni = $_POST['dni'];
 $email = $_POST['email'];
-$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+$contraseña = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 // Preparamos la consulta SQL para insertar los valores en la tabla users
-$query = "INSERT INTO users (nombre, apellido, dni, email, password) VALUES (?, ?, ?, ?, ?)";
+$query = "INSERT INTO users (nombre, apellido, dni, email, contraseña) VALUES (?, ?, ?, ?, ?)";
 
 // Preparamos la sentencia SQL
 $stmt = $con->prepare($query);
 
 // Asociamos los parámetros de la consulta con los valores del formulario
-$stmt->bind_param("ssiss", $nombre, $apellido, $dni, $email, $password);
+$stmt->bind_param("ssiss", $nombre, $apellido, $dni, $email, $contraseña);
 
 // Ejecutamos la sentencia SQL
 if ($stmt->execute($query)) {
