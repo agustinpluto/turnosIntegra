@@ -20,7 +20,7 @@
             echo "No se encontraron resultados.";
         }
 
-        echo "hola";
+        header("Location: /registro_exitoso.php");
 
       } else {
         echo "error";
