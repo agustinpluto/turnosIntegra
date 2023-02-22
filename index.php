@@ -25,7 +25,7 @@
         </ul>
       </div>
       <div>
-        <h1>prueb</h1>
+        <h1>LOGO</h1>
       </div>
     </nav>
 
