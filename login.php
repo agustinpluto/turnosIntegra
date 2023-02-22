@@ -73,8 +73,8 @@
                 <div class="col">
 
                   <div class="mb-3">
-                    <label for="dni" class="form-label">DNI</label>
-                    <input type="text" class="form-control" id="dni" name="dni" required>
+                    <label for="email" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                   </div>
 
                 </div>
