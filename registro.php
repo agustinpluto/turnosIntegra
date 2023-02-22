@@ -28,6 +28,9 @@
           </li>
         </ul>
       </div>
+      <div>
+        <h1>LOGO</h1>
+      </div>
     </nav>
 
   </div>

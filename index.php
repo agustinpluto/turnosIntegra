@@ -26,7 +26,7 @@
         </ul>
       </div>
       <div>
-        <h1>INTEGRA LOGO</h1>
+        <h1>LOGO</h1>
       </div>
     </nav>
 
