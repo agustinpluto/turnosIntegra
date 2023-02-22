@@ -7,5 +7,4 @@
 
     // conexión
     $mysqli = new mysqli($servidor, $usuario, $password, $basedatos);
-
 ?>
