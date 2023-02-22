@@ -33,8 +33,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-            <form class="p-5 rounded" style="background-color: #8800ff;">
+          <div class="d-flex justify-content-center mt-5 mb-5">
+            <form class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff; border-radius: 10px;">
               <h1 class="mb-4 text-center">Registro</h1>
               <div class="row">
                 <div class="col">
