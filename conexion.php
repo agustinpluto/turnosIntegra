@@ -7,7 +7,7 @@
 
     try {
       $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-      $mensaje = "Conectado a la DB";
+      $mensaje = "Conectado a la DB  ";
     } catch (PDOException $e) {
       die('Connection Failed: ' . $e->getMessage());
     }
