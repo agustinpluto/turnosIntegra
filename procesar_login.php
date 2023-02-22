@@ -20,7 +20,7 @@
             echo "No se encontraron resultados.";
         }
 
-        header("Location: /registro_exitoso.php");
+        header("Location: /login_exitoso.php");
 
       } else {
         echo "error";
