@@ -1,13 +1,23 @@
 <?php
 
-  require 'conexion.php';
+  include 'conexion.php';
 
   $email = $_POST['email'];
   $password = $_POST['password'];
 
   if (!empty($email) && !empty($password)) {
 
-    echo "Bienvenido".$email;
+    $sql = "SELECT * FROM usuarios WHERE email = '$email'";
+    $resultado = mysql_query($conexion, $sql);
+
+    while ($row = mysqli_fetch_array($resultado)) {
+      $mail = $row['email'];
+      $pass = $row['password'];
+    }
+
+    if ($email == $mail && $password == $pass) {
+      echo "Bienvenido ".$email;
+    }
 
   } else {
 
