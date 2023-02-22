@@ -28,8 +28,8 @@
           </li>
         </ul>
       </div>
-      <div>
-      <h3 style="padding-left: 10px">LOGO</h3>
+      <div style="padding-left: 10px">
+      <h3>LOGO</h3>
       </div>
     </nav>
 
