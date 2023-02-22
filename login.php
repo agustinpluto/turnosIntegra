@@ -7,7 +7,7 @@
 
   if (!empty($email) && !empty($password)) {
 
-    $query = "SELECT email, password FROM usuarios WHERE email = ? LIMIT 1";
+    $query = "SELECT id, email, password FROM usuarios WHERE email = ? LIMIT 1";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -18,7 +18,7 @@
       // Las credenciales son válidas, iniciar sesión
       session_start();
       $_SESSION['user_id'] = $user['id'];
-      header('Location: pagina_protegida.php');
+      header('Location: index.php');
     } else {
       // Las credenciales son inválidas, mostrar un mensaje de error
       echo "Correo electrónico o contraseña incorrectos.";
