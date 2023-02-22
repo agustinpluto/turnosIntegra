@@ -23,6 +23,8 @@
       // Las credenciales son inválidas, mostrar un mensaje de error
       echo "Correo electrónico o contraseña incorrectos.";
     }
+  } else {
+    echo "error";
   }
 
 ?>
