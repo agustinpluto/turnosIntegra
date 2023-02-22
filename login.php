@@ -35,13 +35,14 @@
         <div class="col">
             <div class="d-flex flex-row justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
                 
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Contraseña">
+                <div class="container">
+                    1
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                <div class="container">
+                    1
+                </div>
+                <div class="container">
+                    1
                 </div>
 
                 <a href="/registro.php" class="btn btn-danger btn-block">Entrar</a>
