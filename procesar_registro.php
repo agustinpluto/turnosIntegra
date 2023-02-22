@@ -20,12 +20,6 @@
             echo "No se encontraron resultados.";
         }
 
-        $stmt = $conn->prepare($query);
-        $stmt->bind_param("s", $email);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $user = $result->fetch_assoc();
-
         echo "hola";
 
       } else {
