@@ -28,9 +28,7 @@
           </li>
         </ul>
       </div>
-      <div style="padding-left: 10px">
-      <h3>LOGO</h3>
-      </div>
+      <a class="navbar-brand" href="/index.php" style="padding-left: 10px;">Logo</a>
     </nav>
 
   </div>
