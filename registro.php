@@ -11,8 +11,8 @@
   <!-- danger es violeta -->
   <div class="container-fluid px-0">
 
-  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand navbar-light bg-light ml-3" style="border-bottom: 2px solid #510097;">
-      <a class="navbar-brand" href="/index.php">Integra</a>
+  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand navbar-light bg-light" style="border-bottom: 2px solid #510097;">
+      <a class="navbar-brand ml-3" href="/index.php">Integra</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
