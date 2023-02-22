@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col">
         <div class="d-flex justify-content-center mt-5 mb-5">
-            <form class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff; border-radius: 20px;">
+            <form class="p-5 rounded-20" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Iniciar sesión</h1>
               <div class="row">
                 <div class="col">
