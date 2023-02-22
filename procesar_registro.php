@@ -7,19 +7,7 @@
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    function insertarUsuario($nombre, $apellido, $dni, $email, $password) {
-        include "conexion.php";
-
-        $stmt = $mysqli->prepare("INSERT INTO users (nombre, apellido, dni, email, password) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssiss", $nombre, $apellido, $dni, $email, $password);
-        $stmt->execute();
-
-        if ($stmt->affected_rows == 1) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    include 'funcion.php';
 
     // Llamar a la función insertarUsuario() con los valores correspondientes
     if (insertarUsuario($nombre, $apellido, $dni, $email, $password)) {
