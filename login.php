@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-            <div class="d-flex justify-content-center pt-4 border rounded mx-5 mt-5">
+            <div class="d-flex flex-row justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
                 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
