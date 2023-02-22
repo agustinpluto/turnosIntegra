@@ -22,13 +22,10 @@
           <li class="nav-item active">
             <a class="nav-link text-danger" href="/index.php">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="/registro.php">Crear cuenta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="/login.php">Iniciar sesión</a>
-          </li>
         </ul>
+      </div>
+      <div>
+        <h1>prueb</h1>
       </div>
     </nav>
 
