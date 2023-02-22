@@ -32,33 +32,39 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-      <div class="col">
+        <div class="col">
           <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
             <form class="p-5 rounded" style="background-color: #f7f7f7;">
               <h1 class="mb-4 text-center">Registro</h1>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
-              </div>
-              <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" required>
-              </div>
-              <div class="mb-3">
-                <label for="dni" class="form-label">DNI</label>
-                <input type="text" class="form-control" id="dni" name="dni" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">E-Mail</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-              </div>
-              <div class="mb-3">
-                <label for="re_password" class="form-label">Confirmar contraseña</label>
-                <input type="password" class="form-control" id="re_password" name="re_password" required>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="text" class="form-control" id="dni" name="dni" required>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="re_password" class="form-label">Confirmar contraseña</label>
+                    <input type="password" class="form-control" id="re_password" name="re_password" required>
+                  </div>
+                </div>
               </div>
               <button type="submit" class="btn btn-danger w-100">Registro</button>
             </form>
@@ -78,12 +84,12 @@
         </div>
       </div>
     </footer>
-    
+
   </div>
-      
 
 
-      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
