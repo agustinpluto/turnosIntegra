@@ -2,21 +2,10 @@
 
   require 'conexion.php';
 
-  if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $records = $conn->prepare('SELECT email, password FROM usuarios WHERE email = :email');
-    $records->bindParam(':email', $_POST['email']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
+  $email = $_POST['email'];
+  $password = $_POST['password'];
 
-    $message = '';
-
-    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
-      $_SESSION['user_id'] = $results['id'];
-      header("Location: /login.php");
-    } else {
-      $message = 'Usuario o Contraseña erroneos.';
-    }
-  }
+  echo $email;
 
 ?>
 
@@ -58,9 +47,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <?php if(!empty($message)): ?>
-            <p> <?= $message ?></p>
-          <?php endif; ?>
+
           <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
             <form action="login.php" method="POST" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Iniciar sesión</h1>
