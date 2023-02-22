@@ -1,6 +1,13 @@
 <?php
 // Incluimos el archivo de conexión a la base de datos
-include 'conexion.php';
+// datos de conexión
+$servidor = "localhost";
+$usuario = "agustin";
+$password = "Ireliagod1!";
+$basedatos = "integra";
+
+// conexión
+$mysqli = new mysqli($servidor, $usuario, $password, $basedatos);
 
 // Obtenemos los valores del formulario
 $nombre = $_POST['nombre'];
@@ -13,13 +20,13 @@ $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $query = "INSERT INTO users (nombre, apellido, dni, email, password) VALUES (?, ?, ?, ?, ?)";
 
 // Preparamos la sentencia SQL
-$stmt = $conn->prepare($query);
+$stmt = $mysqli->prepare($query);
 
 // Asociamos los parámetros de la consulta con los valores del formulario
 $stmt->bind_param("ssiss", $nombre, $apellido, $dni, $email, $password);
 
 // Ejecutamos la sentencia SQL
-if ($stmt->execute()) {
+if ($stmt->execute($query)) {
     // Si la consulta se ejecutó correctamente, redireccionamos a una página de éxito
     header("Location: registro_exitoso.php");
     exit();
