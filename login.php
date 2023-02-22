@@ -35,13 +35,13 @@
         <div class="col">
             <div class="d-flex flex-row justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
                 
-                <div class="container">
+                <div class="row">
                     1
                 </div>
-                <div class="container">
+                <div class="row">
                     1
                 </div>
-                <div class="container">
+                <div class="row">
                     1
                 </div>
 
