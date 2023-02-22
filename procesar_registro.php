@@ -24,6 +24,7 @@
     // Llamar a la función insertarUsuario() con los valores correspondientes
     if (insertarUsuario($nombre, $apellido, $dni, $email, $password)) {
         // El usuario se ha registrado correctamente
+        echo "READY";
         header("Location: login.php");
     } else {
         // Ocurrió un error al registrar el usuario
