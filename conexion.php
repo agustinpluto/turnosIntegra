@@ -7,10 +7,4 @@
 
     $conexion = mysqli_connect($server,$username,$password,$database);
 
-    if ($conexion) {
-        echo "Estas conectado a la DB";
-    } else {
-        echo "Error conexion";
-    }
-
 ?>

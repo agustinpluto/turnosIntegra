@@ -7,21 +7,23 @@
 
   if (!empty($email) && !empty($password)) {
 
-    $sql = "SELECT * FROM usuarios WHERE email = '$email'";
-    $resultado = mysql_query($conexion, $sql);
+    $query = "SELECT email, password FROM usuarios WHERE email = ? LIMIT 1";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
 
-    while ($row = mysqli_fetch_array($resultado)) {
-      $mail = $row['email'];
-      $pass = $row['password'];
+    if ($user && password_verify($password, $user['password'])) {
+      // Las credenciales son válidas, iniciar sesión
+      session_start();
+      $_SESSION['user_id'] = $user['id'];
+      header('Location: pagina_protegida.php');
+    } else {
+      // Las credenciales son inválidas, mostrar un mensaje de error
+      echo "Correo electrónico o contraseña incorrectos.";
     }
-
-    if ($email == $mail && $password == $pass) {
-      echo "Bienvenido ".$email;
-    }
-
-  } else {
-
-    echo "algo salio mal";
+    ?>
 
   }
 
