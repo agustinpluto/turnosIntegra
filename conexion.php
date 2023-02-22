@@ -14,5 +14,10 @@ $con = mysqli_connect($servidor, $usuario, $password, $basedatos);
 // } else {
 //   echo 'Conectado a la base de datos';
 // }
+// Check connection
+if (!$conn) {
+    die("Connection failed" . mysqli_connect_error());
+} 
+
 
 ?>

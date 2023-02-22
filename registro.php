@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    include('conexion.php'); 
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -41,6 +46,17 @@
         <div class="col">
           <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
             <form action="procesar_registro.php" method="post" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
+              <?php include('errors.php'); ?>
+              <?php if (isset($_SESSION['error'])) : ?>
+              <div class="error">
+                  <h3>
+                      <?php 
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                      ?>
+                  </h3>
+              </div>
+              <?php endif ?>
               <h1 class="mb-4 text-start text-danger">Registro</h1>
               <div class="row">
                 <div class="col">

@@ -1,33 +1,57 @@
-<?php
-include 'conexion.php';
+<?php 
+    session_start();
+    include('server.php');
+    
+    $errors = array();
 
-// Obtenemos los valores del formulario
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$dni = $_POST['dni'];
-$email = $_POST['email'];
-$contraseña = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    if (isset($_POST['reg_user'])) {
+        $username = mysqli_real_escape_string($conn, $_POST['nombre']);
+        $email = mysqli_real_escape_string($conn, $_POST['apellido']);
+        $password_1 = mysqli_real_escape_string($conn, $_POST['password_1']);
+        $password_2 = mysqli_real_escape_string($conn, $_POST['password_2']);
 
-// Preparamos la consulta SQL para insertar los valores en la tabla users
-$query = "INSERT INTO users (nombre, apellido, dni, email, contraseña) VALUES (?, ?, ?, ?, ?)";
+        if (empty($username)) {
+            array_push($errors, "Username is required");
+            $_SESSION['error'] = "Username is required";
+        }
+        if (empty($email)) {
+            array_push($errors, "Email is required");
+            $_SESSION['error'] = "Email is required";
+        }
+        if (empty($password_1)) {
+            array_push($errors, "Password is required");
+            $_SESSION['error'] = "Password is required";
+        }
+        if ($password_1 != $password_2) {
+            array_push($errors, "The two passwords do not match");
+            $_SESSION['error'] = "The two passwords do not match";
+        }
 
-// Preparamos la sentencia SQL
-$stmt = $con->prepare($query);
+        $user_check_query = "SELECT * FROM user WHERE username = '$username' OR email = '$email' LIMIT 1";
+        $query = mysqli_query($conn, $user_check_query);
+        $result = mysqli_fetch_assoc($query);
 
-// Asociamos los parámetros de la consulta con los valores del formulario
-$stmt->bind_param("ssiss", $nombre, $apellido, $dni, $email, $contraseña);
+        if ($result) { // if user exists
+            if ($result['username'] === $username) {
+                array_push($errors, "Username already exists");
+            }
+            if ($result['email'] === $email) {
+                array_push($errors, "Email already exists");
+            }
+        }
 
-// Ejecutamos la sentencia SQL
-if ($stmt->execute($query)) {
-    // Si la consulta se ejecutó correctamente, redireccionamos a una página de éxito
-    header("Location: registro_exitoso.php");
-    exit();
-} else {
-    // Si hubo un error, mostramos un mensaje
-    echo "Error: " . $stmt->error;
-}
+        if (count($errors) == 0) {
+            $password = md5($password_1);
 
-// Cerramos la conexión a la base de datos y liberamos los recursos
-$stmt->close();
-$con->close();
+            $sql = "INSERT INTO user (username, email, password) VALUES ('$username', '$email', '$password')";
+            mysqli_query($conn, $sql);
+
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = "You are now logged in";
+            header('location: index.php');
+        } else {
+            header("location: register.php");
+        }
+    }
+
 ?>
