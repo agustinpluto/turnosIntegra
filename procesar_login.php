@@ -9,14 +9,9 @@
 
         $query = "SELECT id, email, password FROM usuarios WHERE email = '$email'";
         $result = mysqli_query($conexion, $query);
-
-        if (mysqli_num_rows($result) > 0) {
-            header("Location: /loginOk.php");
-        } else {
-            echo "No se encontraron resultados.";
-        }
-
-
+        
+        header("Location: /loginOk.php");
+        
       } else {
         echo "error";
       };
