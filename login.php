@@ -33,24 +33,30 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-            <form class="p-5 rounded" style="background-color: #f7f7f7;">
-              <h1 class="mb-4 text-center">Iniciar Sesión</h1>
-              <div class="mb-3">
-                <label for="username" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <form class="p-5 rounded" style="background-color: #8800ff;">
+              <h1 class="mb-4 text-center">Iniciar sesión</h1>
+              <div class="row">
+                <div class="col">
+                
+                  <div class="mb-3">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="text" class="form-control" id="dni" name="dni" required>
+                  </div>
+
+                </div>
+                <div class="col">
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                  
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-              </div>
-              <button type="submit" class="btn btn-danger w-100">Ingresar</button>
+              <button type="submit" class="btn btn-danger w-100">Entrar</button>
             </form>
           </div>
-        </div>
-        <div class="col">
-          <h1>COmpletar con algo</h1>
-        </div>
       </div>
     </div>
   </div>

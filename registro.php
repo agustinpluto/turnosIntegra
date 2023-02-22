@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col">
           <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-            <form class="p-5 rounded" style="background-color: #f7f7f7;">
+            <form class="p-5 rounded" style="background-color: #8800ff;">
               <h1 class="mb-4 text-center">Registro</h1>
               <div class="row">
                 <div class="col">
