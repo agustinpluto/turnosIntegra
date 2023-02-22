@@ -24,7 +24,7 @@
             <a class="nav-link text-danger" href="/index.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-danger" href="/registro.php">Crear cuenta</a>
+            <a class="nav-link text-danger" href="registro.php">Crear cuenta</a>
           </li>
         </ul>
       </div>
