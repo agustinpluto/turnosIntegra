@@ -35,7 +35,7 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 col-sm-1">
+        <div class="col-lg-6 col-sm-1">
           <div class="d-flex justify-content-center mt-5 mb-5">
             <form class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Iniciar sesión</h1>
