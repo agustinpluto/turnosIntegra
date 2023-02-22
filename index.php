@@ -63,7 +63,7 @@
       </div>
   </div>
 
-  <div class="container fixed-bottom">
+  <div class="container-fluid fixed-bottom w-100">
     <footer class="bg-light py-1 mx-auto">
       <div class="container">
         <div class="row">
