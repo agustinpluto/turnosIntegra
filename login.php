@@ -33,10 +33,10 @@
     <div class="container">
       <div class="row">
         <div class="col">
-            <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
+            <div class="d-flex justify-content-center pt-4 border rounded mx-5 mt-5">
                 
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
+                    <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Contraseña">
                 </div>
                 <div class="mb-3">
@@ -51,7 +51,7 @@
             <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
               <div class="card mx-2 mb-4">
                 <div class="card-header text-danger">
-                    Ingreso
+                    Registro
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Registrarse</h5>
