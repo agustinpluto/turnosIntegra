@@ -26,7 +26,7 @@
         </ul>
       </div>
       <div>
-      <h3>LOGO</h3>
+      <h3 style="margin-left: 10px">LOGO</h3>
       </div>
     </nav>
 
