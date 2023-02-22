@@ -35,7 +35,7 @@
     <div class="row">
       <div class="col">
         <div class="container-flui d-flex justify-content-center aling-items-center">
-            <h1>Bienvenido</h1>.<?php echo $email ?>
+            <h1>Mis turnos</h1>
         </div>
       </div>
     </div>
