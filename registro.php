@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -40,7 +41,7 @@
       <div class="row">
         <div class="col">
           <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
-            <form action="servidor/registro/procesar_registro.php" method="post" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
+            <form action="php/registro.php" method="post" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Registro</h1>
               <div class="row">
                 <div class="col">
