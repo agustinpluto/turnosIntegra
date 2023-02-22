@@ -55,7 +55,7 @@
               <div class="card-body">
                 <h5 class="card-title">Registrarse</h5>
                 <p class="card-text">Para crear su cuenta presione el boton "Registro"</p>
-                <a href="/registro.php" class="btn btn-danger btn-block">Registro</a>
+                <a href="#" class="btn btn-danger btn-block">Registro</a>
               </div>
             </div>
           </div>
