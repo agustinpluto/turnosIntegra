@@ -1,24 +1,9 @@
 <?php
 
-  include 'conexion.php';
-
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  if (!empty($email) && !empty($password)) {
-
-    $query = "SELECT id, email, password FROM usuarios WHERE email = '$email'";
-    $stmt = $conn->prepare($query);
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $user = $result->fetch_assoc();
-
-    echo "hola";
-
-  } else {
-    echo "error";
-  }
+  require 'procesar_registro.php'
 
 ?>
 
@@ -62,7 +47,7 @@
         <div class="col">
 
           <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
-            <form action="login.php" method="POST" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
+            <form action="procesar_registro.php" method="POST" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Iniciar sesión</h1>
               <div class="row">
                 <div class="col">
