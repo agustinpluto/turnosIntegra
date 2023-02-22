@@ -25,7 +25,7 @@ $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $query = "INSERT INTO users (nombre, apellido, dni, email, password) VALUES (?, ?, ?, ?, ?)";
 
 // Preparamos la sentencia SQL
-$stmt = $mysqli->prepare($query);
+$stmt = $con->prepare($query);
 
 // Asociamos los parámetros de la consulta con los valores del formulario
 $stmt->bind_param("ssiss", $nombre, $apellido, $dni, $email, $password);
@@ -42,5 +42,5 @@ if ($stmt->execute($query)) {
 
 // Cerramos la conexión a la base de datos y liberamos los recursos
 $stmt->close();
-$conn->close();
+$con->close();
 ?>
