@@ -70,7 +70,7 @@
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-danger w-100">Registro</button>
+              <button type="submit" class="btn btn-danger w-100 pt-4">Registro</button>
 
             </form>
           </div>
