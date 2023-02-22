@@ -54,7 +54,7 @@
         <div class="col-sm-6">
           <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
             <div class="card mx-2 mb-4 flex-fill p-1 ml-2 mr-2">
-              <div class="card-header text-black bg-danger">
+              <div class="card-header text-danger">
                 Crear cuenta
               </div>
               <div class="card-body">
