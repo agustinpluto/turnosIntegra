@@ -11,7 +11,8 @@
   <!-- danger es violeta -->
   <div class="container-fluid px-0">
 
-  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand navbar-light bg-light" style="border-bottom: 2px solid #510097;">
+    <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand navbar-light bg-light"
+      style="border-bottom: 2px solid #510097;">
       <a class="navbar-brand" href="/index.php" style="padding-left: 10px;">Integra</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
         </ul>
       </div>
     </nav>
-    
+
   </div>
 
   </div>
@@ -37,13 +38,13 @@
     <div class="container">
       <div class="row">
         <div class="col">
-        <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
+          <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
             <form class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
               <h1 class="mb-4 text-start text-danger">Registro</h1>
               <div class="row">
                 <div class="col">
 
-                <div class="mb-3">
+                  <div class="mb-3">
                     <label for="mpmbre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="mpmbre" name="mpmbre" required>
                   </div>
@@ -62,7 +63,7 @@
                 </div>
                 <div class="col">
 
-                <div class="mb-3">
+                  <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" name="email" required>
                   </div>
