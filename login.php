@@ -7,7 +7,7 @@
 
   if (!empty($email) && !empty($password)) {
 
-    $query = "SELECT id, email, password FROM usuarios WHERE email = ? LIMIT 1";
+    $query = "SELECT id, email, password FROM usuarios WHERE email = '$email'";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("s", $email);
     $stmt->execute();
