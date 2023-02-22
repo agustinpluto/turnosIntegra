@@ -33,14 +33,15 @@
     <div class="container">
       <div class="row">
         <div class="col">
-        <div class="form-floating mb-3">
+        <div class="d-flex justify-content-center aling-items-center pt-4 border rounded mx-5 mt-5">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email:</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Contraseña:</label>
-        </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                   <label for="floatingPassword">Contraseña:</label>
+                </div>
         </div>
       </div>
     </div>
