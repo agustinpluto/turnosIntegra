@@ -2,30 +2,6 @@
 
   require 'conexion.php';
 
-  $message = '';
-
-  if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO usuarios (email, password) VALUES (:email, :password)";
-    $sql2 = "INSERT INTO usuarios (rol) VALUES (:rol)";
-
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $dni = $_POST['dni'];
-
-
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':email', $_POST['email']);
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-    $stmt->bindParam(':password', $password);
-
-
-    if ($stmt->execute()) {
-      $message = 'Successfully created new user';
-    } else {
-      $message = 'Sorry there must have been an issue creating your account';
-    }
-  };
-
 ?>
 
 <!DOCTYPE html>
@@ -70,9 +46,6 @@
       <div class="row">
         <div class="col">
           <div class="d-flex justify-content-center mt-2 mb-5 pt-4">
-            <?php if(!empty($message)): ?>
-            <p> <?= $message ?></p>
-            <?php endif; ?>
 
             <form action="registro.php" method="post" class="p-5 rounded" style="background-color: white; border: 2px solid #8800ff;">
   
