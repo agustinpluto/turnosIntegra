@@ -19,9 +19,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
 
         <ul class="navbar-nav mx-4">
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="/index.php">Inicio</a>
-          </li>
+          <div class="col">
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="/index.php">Inicio</a>
+            </li>
+          </div>
+          <div class="col aling-items-end">
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="/login.php">Iniciar sesión</a>
+            </li>
+          </div>
         </ul>
 
       </div>
@@ -66,9 +73,9 @@
                   </div>
                 </div>
               </div>
-              
+
               <button type="submit" class="btn btn-danger w-100">Registro</button>
-            
+
             </form>
           </div>
         </div>
