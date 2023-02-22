@@ -1,14 +1,9 @@
 <?php
 
-  session_start();
-
-  if (isset($_SESSION['user_id'])) {
-    header('Location: /login');
-  }
   require 'conexion.php';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $records = $conn->prepare('SELECT id, email, password FROM usuarios WHERE email = :email');
+    $records = $conn->prepare('SELECT email, password FROM usuarios WHERE email = :email');
     $records->bindParam(':email', $_POST['email']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
